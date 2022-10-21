@@ -6,9 +6,8 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 import requests
 
-API_KEY = "278dd8c3bb1ee1eca0e406490a5e4e18"
-API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNzhkZDhjM2JiMWVlMWVjYTBlNDA2NDkwYTVlNGUxOCIsInN1YiI6IjYzNTI0OTRmODgwYzkyMDA3OTZjZTI0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7TUWGRmJFU7ot-imaBgmAZBgYt1x2JZx8ojqf_zVHH0"
-
+API_KEY = {API_KEY}
+API_TOKEN = {API_TOKEN}
 Headers = {
     'api_key': API_KEY,
     'Authorization': f'Bearer {API_TOKEN}',
@@ -19,7 +18,7 @@ API_FIND_URL = "https://api.themoviedb.org/3/movie/"
 MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "$%^ambhjk)**?!@~bl"
+app.config['SECRET_KEY'] = {SECRET_KEY}
 Bootstrap(app)
 
 app.app_context().push()
